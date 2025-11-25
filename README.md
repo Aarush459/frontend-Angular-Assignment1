@@ -1,27 +1,44 @@
-# PeopleSpa
+This is my Angular SPA for managing people.
+It shows list, edit and delete screens.
+It uses the same backend I made in Assignment 2(by just calling api url)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.29.
+Versions I used
 
-## Development server
+Node.js: v16.20.2
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+npm: 8.19.4
 
-## Code scaffolding
+Angular CLI: 8.3.29
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+(I had to switch to Node 16 because Angular 8 doesn't work with Node 24.)
 
-## Build
+How to run Angular project
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Start Angular:
 
-## Running unit tests
+ng serve
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Open the app in browser:
 
-## Running end-to-end tests
+http://localhost:4200
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Important
+Backend must be running first, otherwise Angular can't load data.
 
-## Further help
+Backend API used:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+http://localhost:3000/api/person
+
+
+If backend is not running you will see empty list or CORS errors.
+features
+
+List all people
+
+Edit a person
+
+Delete a person
+
+Angular routing
+
+Angular service calling REST API
