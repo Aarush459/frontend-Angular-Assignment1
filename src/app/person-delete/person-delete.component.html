@@ -1,0 +1,6 @@
+<h3>Delete Person</h3>
+
+<p>Are you sure you want to delete: <b>{{ person.name }}</b>?</p>
+
+<button (click)="deletePerson()">Yes, Delete</button>
+<button [routerLink]="['/people']">Cancel</button>
